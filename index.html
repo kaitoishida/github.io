@@ -7,66 +7,76 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>主のポートフォリオ</h1>
-        <p>Web Developer | Java Programmer | Python Enthusiast</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>主</h1>
+            <p>Web Developer | Java Programmer | Python Enthusiast</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
     </header>
 
-    <section id="about" class="about">
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            IT系専門学生として、Web開発、Javaアプリケーション、Pythonによるデータ処理に力を入れています。
-            シンプルで使いやすいUIと、効率的なバックエンド設計が得意です。
+            IT系専門学生。フロントエンドからバックエンド、AIまで幅広く挑戦中。
+            シンプルかつ直感的なUI/UX設計を重視し、チーム開発も得意。
         </p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-item">
+        <div class="skills-grid">
+            <div class="skill-card">
                 <h3>HTML/CSS</h3>
-                <p>レスポンシブWebデザイン対応</p>
+                <p>美しくレスポンシブなWebデザインを構築</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-card">
                 <h3>Java</h3>
-                <p>オブジェクト指向プログラミング、デスクトップアプリ開発</p>
+                <p>オブジェクト指向設計、デスクトップアプリ開発</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-card">
                 <h3>Python</h3>
-                <p>データ分析、AI/機械学習基礎</p>
+                <p>データ処理、AIモデル開発、スクリプト自動化</p>
             </div>
-            <div class="skill-item">
+            <div class="skill-card">
                 <h3>SQL</h3>
-                <p>データベース設計・操作</p>
+                <p>効率的なDB設計と最適化クエリ</p>
             </div>
         </div>
     </section>
 
     <section id="portfolio">
         <h2>Portfolio</h2>
-        <div class="portfolio">
+        <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Project 1">
-                <h3>Webサイト制作</h3>
+                <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                <div class="overlay">
+                    <h3>Web App UI</h3>
+                </div>
             </div>
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Project 2">
-                <h3>Javaアプリ開発</h3>
+                <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                <div class="overlay">
+                    <h3>Java Desktop Tool</h3>
+                </div>
             </div>
             <div class="portfolio-item">
-                <img src="https://via.placeholder.com/400x250" alt="Project 3">
-                <h3>Pythonスクリプト</h3>
+                <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                <div class="overlay">
+                    <h3>Python Data Script</h3>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact</h2>
         <p>Email: example@example.com</p>
         <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
