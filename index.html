@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="石田海音の神レベルポートフォリオ。Web・Java・Pythonのプロジェクトを紹介。">
-  <meta name="author" content="石田海音">
-  <title>石田海音 | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="石田海音の神レベルポートフォリオ" />
+  <meta name="author" content="石田海音" />
+  <title>石田海音 | 神ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Background Canvas -->
+  <canvas id="background"></canvas>
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <button id="themeBtn">🌙</button>
+  </div>
+
   <!-- Hero -->
   <header class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>石田海音</h1>
       <p>Web Developer · Java Engineer · Python Specialist</p>
@@ -20,69 +27,66 @@
     </div>
   </header>
 
-  <!-- Navigation -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <div class="navbar-container">
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML5 / CSS3 / JavaScript</li>
-        <li>Java (Spring Boot, JavaFX)</li>
-        <li>Python (Flask, Django, Automation)</li>
-        <li>SQL (MySQL, PostgreSQL)</li>
-      </ul>
-    </section>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5 / CSS3 / JavaScript</li>
+      <li>Java (Spring Boot, JavaFX)</li>
+      <li>Python (Flask, Django, Automation)</li>
+      <li>SQL (MySQL, PostgreSQL)</li>
+    </ul>
+  </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="section">
-      <h2>Portfolio</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400" alt="Web App UI project">
-          <div class="portfolio-overlay">
-            <h3>Web App UI</h3>
-            <p>レスポンシブWebアプリUI</p>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400" alt="Java Desktop Tool project">
-          <div class="portfolio-overlay">
-            <h3>Java Desktop Tool</h3>
-            <p>JavaFXによるデスクトップツール</p>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="https://via.placeholder.com/600x400" alt="Python Script project">
-          <div class="portfolio-overlay">
-            <h3>Python Script</h3>
-            <p>データ処理自動化スクリプト</p>
-          </div>
+  <!-- Portfolio -->
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/600x400" alt="Web App UI" />
+        <div class="portfolio-overlay">
+          <h3>Web App UI</h3>
+          <p>レスポンシブWebアプリUI</p>
         </div>
       </div>
-    </section>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/600x400" alt="Java Desktop Tool" />
+        <div class="portfolio-overlay">
+          <h3>Java Desktop Tool</h3>
+          <p>JavaFXデスクトップツール</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/600x400" alt="Python Script" />
+        <div class="portfolio-overlay">
+          <h3>Python Script</h3>
+          <p>データ処理自動化スクリプト</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <address>
-        <p>Email: <a href="mailto:2401002@s.asojuku.ac.jp">2401002@s.asojuku.ac.jp</a></p>
-        <p>GitHub: <a href="https://kaitoishida.github.io/github.io/" target="_blank" rel="noopener">kaitoishida.github.io</a></p>
-      </address>
-    </section>
-  </main>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <address>
+      <p>Email: <a href="mailto:2401002@s.asojuku.ac.jp">2401002@s.asojuku.ac.jp</a></p>
+      <p>GitHub: <a href="https://kaitoishida.github.io/github.io/" target="_blank" rel="noopener">kaitoishida.github.io</a></p>
+    </address>
+  </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 石田海音. All Rights Reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
